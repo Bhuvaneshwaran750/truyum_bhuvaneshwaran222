@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel=stylesheet href="style/style.css">
+      <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <header>truYum 
+        <img src="images/truYum.png">
+        <nav><a class=a2 href="menu-item-list-admin.html">Menu</a></nav>
+    </header>
+    <form class=edm>
+          <p id=edp>Edit Menu Item</p>
+          <table class=Table1>
+            <tr >
+              <td colspan="4"><label><b>Name</b></label><br>
+                  <input type=text name=title size=130% required>
+              </td>
+            </tr>
+            <tr >
+              <td ><b>Price(Rs.)</b><br>
+                  <input class=pa type=text name=price required>
+              </td>
+              <td ><b>Active</b><br>
+                  <input class=radio type=radio value=Yes name=inStock required>Yes
+                  <input class=radio type=radio value=No name=inStock required>No
+              </td>
+              <td ><b>Date of Launch</b><br>
+                  <input type=text name=dateOfLaunch required>
+              </td>
+              <td ><b>Category</b><br>
+                  <select name=category required>
+                     <option  value=Starters>Starters</option>
+                     <option  value="Main Course">Main Course</option>
+                     <option  value="Dessert">Dessert</option>
+                     <option  value="Drinks">Drinks</option>
+                  </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <input type=checkbox class=checkbox name=freeDelivery><b>Free Delivery</b>
+              </td>
+            </tr>
+          </table>
+          <button type=button value=submit onclick="saveItem()" class=button>Save</button>
+      </form>
+      <footer>Copyright &copy 2019</footer>
+  </body>
+</html>
